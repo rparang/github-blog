@@ -78,3 +78,6 @@ github: publish
 
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github
+
+publish: clean html
+	cp CNAME output/CNAME
