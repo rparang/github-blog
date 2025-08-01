@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ SITENAME }} - {{ article.title if article else '' }}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/application.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/grids.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.css">
+</head>
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-5">
+      <div class="sidebar-wrapper">
+        <a class="logo" href="{{ SITEURL }}">{{ SITENAME }}</a>
+        <div class="icons">
+          <a href="https://github.com/rparang" target="_blank"><span class="fa fa-github-square"></span></a>
+          <a href="http://www.linkedin.com/in/rezaparang" target="_blank"><span class="fa fa-linkedin-square"></span></a>
+          <a href="https://twitter.com/RezaParang" target="_blank"><span class="fa fa-twitter-square"></span></a>
+        </div>
+        <p class="bio">From the streets to enterprise software.<br><br>I write here about my projects.</p>
+      </div>
+    </div>
+    <div class="content pure-u-1 pure-u-md-4-5">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>
