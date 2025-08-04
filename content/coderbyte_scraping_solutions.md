@@ -1,7 +1,7 @@
 Title: Coderbyte Scraping and Solutions
 Date: 2014-07-31
 Tags: javascript, interviewing, google, blog
-Slug: foobar-with-google-peculiar-balance
+Slug: coderbyte-scraping-solutions
 
 # Coderbyte Scraping and Solutions
 
