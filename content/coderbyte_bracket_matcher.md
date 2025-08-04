@@ -1,11 +1,11 @@
 Title: Coderbyte Challenge: Bracket Matcher
-Date: 2014-07-31
-Tags: javascript, interviewing, google, blog
+Date: 2014-06-01
 Slug: coderbyte-challenge-bracket-matcher
 
 
-*almost 7 years ago*
-Recently I've been attempting the programming challenges on [Coderbyte](https://web.archive.org/web/20210622222916/http://coderbyte.com/CodingArea/Challenges/). Coderbyte is a site that has a handful of questions that allots points given how 1) fast you complete the challenge and 2) how correct your answer is.
+*Originally published June 2014*
+
+Recently I've been attempting the programming challenges on [Coderbyte](https://coderbyte.com/CodingArea/Challenges/). Coderbyte is a site that has a handful of questions that allots points given how 1) fast you complete the challenge and 2) how correct your answer is.
 
 Once you solve a challenge correctly, it shows you solutions from other users, which might be its most addicting part. Typically I'll either scoff at someone's approach or look at their answer in amazement.
 
@@ -66,7 +66,7 @@ function BracketMatcher(str) {
 }
 ```
 
-Let's see how these perform against one another. To do this, I need some text with lots of parentheses. Some [Lisp sample code](https://web.archive.org/web/20210622222916/http://rezaparang.com/lisp.txt) should work just fine.
+Let's see how these perform against one another. To do this, I need some text with lots of parentheses. Some Lisp sample code is at the bottom of the post.
 
 
 I defined the Lisp text as `string` and pit the two functions against each other. Firing up Chrome's console:
@@ -94,6 +94,75 @@ My solution is nearly 13 times as slow! I need to spend more time on why this is
 
 
 In the meantime, it's interesting how drastic of a difference the performance of the two are.
+
+
+
+### Lisp syntax example
+
+```lisp
+(lambda (class . initargs)
+      (cond ((or (eq? class <class>)
+     (eq? class <entity-class>))
+       (let* ((new (%allocate-instance
+        class
+        (length the-slots-of-a-class)))
+        (dsupers (getl initargs 'direct-supers '()))
+        (dslots  (map list
+          (getl initargs 'direct-slots  '())))
+        (cpl     (let loop ((sups dsupers)
+          (so-far (list new)))
+          (if (null? sups)
+              (reverse so-far)
+              (loop (class-direct-supers
+               (car sups))
+              (cons (car sups)
+              so-far)))))
+        (slots (apply append
+          (cons dslots
+          (map class-direct-slots
+               (cdr cpl)))))
+        (nfields 0)
+        (field-initializers '())
+        (allocator
+          (lambda (init)
+      (let ((f nfields))
+        (set! nfields (+ nfields 1))
+        (set! field-initializers
+        (cons init field-initializers))
+        (list (lambda (o)   (get-field  o f))
+        (lambda (o n) (set-field! o f n))))))
+        (getters-n-setters
+          (map (lambda (s)
+           (cons (car s)
+           (allocator (lambda () '()))))
+         slots)))
+
+         (slot-set! new 'direct-supers      dsupers)
+         (slot-set! new 'direct-slots       dslots)
+         (slot-set! new 'cpl                cpl)
+         (slot-set! new 'slots              slots)
+         (slot-set! new 'nfields            nfields)
+         (slot-set! new 'field-initializers (reverse
+               field-initializers))
+         (slot-set! new 'getters-n-setters  getters-n-setters)
+         new))
+      ((eq? class <generic>)
+       (let ((new (%allocate-entity class
+            (length (class-slots class)))))
+         (slot-set! new 'methods ())
+         new))
+      ((eq? class <method>)
+       (let ((new (%allocate-instance
+       class
+       (length (class-slots class)))))
+         (slot-set! new
+        'specializers
+        (getl initargs 'specializers))
+         (slot-set! new
+        'procedure
+        (getl initargs 'procedure))
+         new)))))
+```
 
 
 

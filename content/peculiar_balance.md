@@ -1,10 +1,9 @@
 Title: Foobar with Google: Peculiar Balance
 Date: 2014-07-31
-Tags: javascript, interviewing, google, blog
 Slug: foobar-with-google-peculiar-balance
 
 
-*Originally published in 2014*
+*Originally published in July 2014*
 
 There has been [recent](https://news.ycombinator.com/item?id=8588080) [buzz](https://www.businessinsider.com/google-hiring-developers-foobar-challenge-2014-11) about a Google recruiting method called [Foobar](https://foobar.withgoogle.com/). Supposedly if you search enough programming-related issues like "python mutex lock," your account is flagged and you're offered to play a game with a series of programming challenges. If you do well, people claim you're invited for an interview.
 

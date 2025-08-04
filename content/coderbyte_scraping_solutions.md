@@ -1,13 +1,11 @@
 Title: Coderbyte Scraping and Solutions
-Date: 2014-07-31
-Tags: javascript, interviewing, google, blog
+Date: 2014-06-15
 Slug: coderbyte-scraping-solutions
 
-# Coderbyte Scraping and Solutions
 
+*Originally published June 2014*
 
-*over 6 years ago*
-I wrote a quick Node app to scrape submitted [challenges from Coderbyte](https://web.archive.org/web/20210622230023/http://coderbyte.com/CodingArea/Challenges/) and to save them locally. Find it here: [https://github.com/rparang/scrape\_coderbyte](https://web.archive.org/web/20210622230023/https://github.com/rparang/scrape_coderbyte)
+I wrote a quick Node app to scrape submitted [challenges from Coderbyte](https://coderbyte.com/CodingArea/Challenges/) and to save them locally. Find it here: [https://github.com/rparang/scrape\_coderbyte](https://github.com/rparang/scrape_coderbyte)
 
 
 If you've spent time on challenges through the browser and realized it may be nice to have these saved for other purposes, this may be helpful.
@@ -16,10 +14,10 @@ If you've spent time on challenges through the browser and realized it may be ni
 Keep it mind, since this scrapes the site by parsing the returned HTML and doesn't use a dedicated Coderbyte API, it may not be stable.
 
 
-[See here](https://web.archive.org/web/20210622230023/https://github.com/rparang/coderbyte/tree/master/challenges) for the solutions to the challenges in Javascript (pulled using the Scrape Coderbyte app) that I've managed to solve. There are few remaining in "Medium Difficulty" and all in the hard category as of the time of this writing.
+[See here](https://github.com/rparang/coderbyte/tree/master/challenges) for the solutions to the challenges in Javascript (pulled using the Scrape Coderbyte app) that I've managed to solve. There are few remaining in "Medium Difficulty" and all in the hard category as of the time of this writing.
 
 
-### Complete Challenges:
+### Completed Challenges:
 
 
 * AB\_Check.js

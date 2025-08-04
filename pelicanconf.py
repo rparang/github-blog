@@ -65,3 +65,4 @@ CATEGORIES_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
+STATIC_PATHS = ['images'] # Anything in STATIC_PATHS gets copied as-is to output/ folder
