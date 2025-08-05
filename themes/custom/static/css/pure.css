@@ -169,8 +169,8 @@ nav ul, nav ol {
 }
 
 img {
-    border: 0;
-    -ms-interpolation-mode:bicubic
+    box-shadow: 4px 4px 12px rgb(193 190 190 / 40%);
+    border: 1px solid #f3f3f3;
 }
 
 svg:not(:root) {

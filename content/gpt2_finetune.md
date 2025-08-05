@@ -2,6 +2,10 @@ Title: Fine-Tuning GPT-2 Medium From Scratch
 Date: 2025-08-05
 Slug: fine-tuning-gpt-2-medium-from-scratch
 
+_Published: August 5, 2025_
+
+![Paint Hip Hop]({static}/images/gpt2_cover.png)
+
 ## Summary
 
 This blog post documents my full process and learnings while fine-tuning a GPT-2 Medium language model from scratch using the Alpaca instruction dataset. 
@@ -152,7 +156,7 @@ GPT2Tokenizer has a method add_special_tokens() which supports introducing key/v
 
 We load the training set into self.samples and split them into self.train_data and self.val_data with a 90%/10% split. These aren’t randomized first, so the validation will consistently be the last 10% of the dataset.
 
-We also call encode_sample() when reading the datafile which does the heavy lifting for encoding and formatting our inputs and labels:
+We also call `encode_sample()` when reading the datafile which does the heavy lifting for encoding and formatting our inputs and labels:
 
 ```python
 def encode_sample(self, question, answer):

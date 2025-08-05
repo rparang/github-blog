@@ -151,6 +151,9 @@ code, pre {
     background-color: #FDF6E3;
 }
 
+img {
+    border: 1px red;
+}
 
 li {
     padding-bottom: 10px;
