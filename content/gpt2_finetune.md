@@ -1,6 +1,6 @@
-Title: A Step-by-Step Guide for Fine-Tuning GPT-2 Medium From Scratch
+Title: Fine-Tuning GPT-2 Medium From Scratch
 Date: 2025-08-05
-Slug: step-by=step guide-for-fine-tuning-gpt-2-medium-from-scratch
+Slug: fine-tuning-gpt-2-medium-from-scratch
 
 ## Summary
 
