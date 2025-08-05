@@ -1,44 +1,8 @@
-/*.sourceCode .kw {
-    color: #268BD2;
-}
 
-.sourceCode .dt {
-    color: #268BD2;
+highlight {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
-.sourceCode .dv, .sourceCode .bn, .sourceCode .fl {
-    color: #D33682;
-}
-
-.sourceCode .ch {
-    color: #DC322F;
-}
-
-.sourceCode .st {
-    color: #2AA198;
-}
-
-.sourceCode .co {
-    color: #93A1A1;
-}
-
-.sourceCode .ot {
-    color: #A57800;
-}
-
-.sourceCode .al {
-    color: #CB4B16;
-    font-weight: bold;
-}
-
-.sourceCode .fu {
-    color: #268BD2;
-}
-
-.sourceCode .er {
-    color: #D30102;
-    font-weight: bold;
-}*/
 
 /* Keywords like 'function', 'return' */
 code .kd, code .k {
@@ -129,11 +93,18 @@ body {
     color: #666666;
 }
 
+
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+}
+
+
 h1 {
     font-family: "omnes-pro", sans-serif;
     font-size: 2em;
     line-height: 40px;
-    margin: .50em 0 !important;
+/*    margin: .50em 0 !important;*/
 }
 
 a {
@@ -167,8 +138,7 @@ blockquote {
 }
 
 code {
-    font-size: 13px !important;
-    padding: 0 4px;
+    font-size: 12px !important;
 }
 
 pre {
@@ -179,6 +149,11 @@ pre {
 
 code, pre {
     background-color: #FDF6E3;
+}
+
+
+li {
+    padding-bottom: 10px;
 }
 
 #layout {
@@ -262,39 +237,3 @@ code, pre {
         width: 960px;
     }
 }
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
-
-
- */
-
-/*
-     FILE ARCHIVED ON 05:44:22 Mar 03, 2017 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:57:57 Jul 31, 2025.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.514
-  exclusion.robots: 0.021
-  exclusion.robots.policy: 0.012
-  esindex: 0.013
-  cdx.remote: 24.814
-  LoadShardBlock: 233.273 (3)
-  PetaboxLoader3.datanode: 171.281 (5)
-  PetaboxLoader3.resolve: 246.277 (3)
-  load_resource: 309.127 (2)
-*/
